@@ -2,8 +2,9 @@
 
 ## Run Test Project
 
-To run the test server, in the root folder execute the fallowing command:
+To run the test server, in the root folder execute the fallowing commands:
 
+npm install
 npm start
 
 The server wil start at localhost:3000
