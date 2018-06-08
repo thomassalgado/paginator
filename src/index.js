@@ -32,6 +32,14 @@ class Paginator extends React.Component {
     var boundaries = parseInt(this.props.boundaries);
     var around = parseInt(this.props.around);
 
+    if (current_page <= 0 || total_pages <= 0 || boundaries <= 0 || around <= 0) {
+      return (
+        <div className="pages">
+          Parameters must be greater than 0
+        </div>
+      );
+    }
+
     var skip = false
 
     var listPages = [];
